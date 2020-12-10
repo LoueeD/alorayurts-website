@@ -1,0 +1,34 @@
+---
+# Feel free to add content and custom Front Matter to this file.
+# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+
+title: My First Page
+layout: default
+
+h1: Relax and unwind
+introText: >
+  Alora yurts have been operating since 2006, originally as York Yurts in the UK and from 2010 to the warmer climate of Andalusia in Southern Spain. 
+
+
+  For the past few years we have set up wonderfully relaxing environments in magical places in the Region of Andalucia to run our unique, and incredibly popular Yurt experience hideaways. The aim has always been to create a laid back and relaxing environment for visitors to escape the pressures of everyday life back home.
+images: 
+  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+---
+
+<div class="home">
+  <div class="home__intro">
+    <h1>{{ page.h1 }}</h1>
+      {{ page.introText | markdownify }}
+    <a class="cta" href="mailto:sara@alorayurts.com">
+      Request a booking 
+    </a>
+  </div>
+  <div class="images">
+    {% for img in page.images %}
+    <div class="images__image" style="background-image:url('{{ img }}')"></div>
+    {% endfor %}
+  </div>
+</div>
