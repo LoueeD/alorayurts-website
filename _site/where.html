@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -27,9 +27,27 @@
 </head>
 
 <body>
-  {% include nav.html %}
+  <div class="nav">
+  <div class="nav__logo">
+    Alora Yurts
+  </div>
+  <div id="menuicon" class="nav__menuitem">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav__items">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/">Food</a>
+    <a href="/">Rates</a>
+    <a href="/">Gallery</a>
+    <a href="/where">Where</a>
+    <a href="mailto:sara@alorayurts.com">sara@alorayurts.com</a>
+  </div>
+</div>
   <!-- Add your site or application content here -->
-  {{ content }}
+  <iframe class="map" data-v-0e5f3ee7="" src="https://www.google.com/maps/embed?pb=!1m24!1m10!1m3!1d409134.3910676591!2d-4.053177!3d36.761872!2m1!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0xd72f6698d30d151%3A0x403d278a576e680!2zTcOhbGFnYSwgU3BhaW4!3m2!1d36.7212737!2d-4.4213987999999995!4m3!3m2!1d36.803053!2d-3.724404!5e0!3m2!1sen!2suk!4v1534717610404" width="600" height="450" frameborder="0" allowfullscreen="allowfullscreen" style="border: 0px;"></iframe>
 
   <script>
     const menuicon = document.querySelector('#menuicon');
