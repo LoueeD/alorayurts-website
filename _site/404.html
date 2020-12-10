@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title></title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -27,9 +27,47 @@
 </head>
 
 <body>
-  {% include nav.html %}
+  <div class="nav">
+  <div class="nav__logo">
+    Alora Yurts
+  </div>
+  <div id="menuicon" class="nav__menuitem">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav__items">
+    <a href="/">Home</a>
+    <a href="/">About</a>
+    <a href="/">Food</a>
+    <a href="/">Rates</a>
+    <a href="/">Gallery</a>
+    <a href="/">Where</a>
+    <a href="mailto:sara@alorayurts.com">sara@alorayurts.com</a>
+  </div>
+</div>
   <!-- Add your site or application content here -->
-  {{ content }}
+  <style type="text/css" media="screen">
+  .container {
+    margin: 10px auto;
+    max-width: 600px;
+    text-align: center;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+</style>
+
+<div class="container">
+  <h1>404</h1>
+
+  <p><strong>Page not found :(</strong></p>
+  <p>The requested page could not be found.</p>
+</div>
+
 
   <script>
     const menuicon = document.querySelector('#menuicon');

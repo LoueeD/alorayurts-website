@@ -13,22 +13,62 @@ introText: >
   For the past few years we have set up wonderfully relaxing environments in magical places in the Region of Andalucia to run our unique, and incredibly popular Yurt experience hideaways. The aim has always been to create a laid back and relaxing environment for visitors to escape the pressures of everyday life back home.
 images: 
   - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
-  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
-  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
-  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0021.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0018.jpg
+  - http://alorayurts.com/assets/img/almunecar-2018/0020.jpg
+
+photoTextBlocks:
+  - text: Alora yurts have been operating since 2006, originally as York Yurts in the UK and from 2010 to the warmer climate of Andalusia in Southern Spain. 
+    image: http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - text: Alora yurts have been operating since 2006, originally as York Yurts in the UK and from 2010 to the warmer climate of Andalusia in Southern Spain. 
+    image: http://alorayurts.com/assets/img/almunecar-2018/0020.jpg
+  - text: Alora yurts have been operating since 2006, originally as York Yurts in the UK and from 2010 to the warmer climate of Andalusia in Southern Spain. 
+    image: http://alorayurts.com/assets/img/almunecar-2018/0018.jpg
+  - text: Alora yurts have been operating since 2006, originally as York Yurts in the UK and from 2010 to the warmer climate of Andalusia in Southern Spain. 
+    image: http://alorayurts.com/assets/img/almunecar-2018/0021.jpg
 ---
 
 <div class="home">
   <div class="home__intro">
-    <h1>{{ page.h1 }}</h1>
+    <div class="block">
+      <h1>{{ page.h1 }}</h1>
       {{ page.introText | markdownify }}
-    <a class="cta" href="mailto:sara@alorayurts.com">
-      Request a booking 
-    </a>
+      <a class="cta" href="mailto:sara@alorayurts.com">
+        Request a booking 
+      </a>
+    </div>
   </div>
   <div class="images">
     {% for img in page.images %}
     <div class="images__image" style="background-image:url('{{ img }}')"></div>
     {% endfor %}
   </div>
+</div>
+<div class="banner">
+  <div class="banner__block">
+    <i class="fas fa-sun"></i>
+    <p>Magical setting with stunning surrounding countryside and wildlife.</p>
+  </div>
+  <div class="banner__block">
+    <i class="fas fa-heart"></i>
+    <p>Unlimited cuddles from adoring, lovable and low maintenance rescue dogs.</p>
+  </div>
+  <div class="banner__block">
+    <i class="fas fa-sun"></i>
+    <p>Visitors can’t avoid leaving anything other than totally relaxed and recharged.</p>
+  </div>
+  <div class="banner__block">
+    <i class="fas fa-calendar"></i>
+    <p>We have relocated to what we believe to be a very special site.</p>
+  </div>
+</div>
+<div class="photo-text-blocks">
+  {% for block in page.photoTextBlocks %}
+  <div class="photo-text-blocks__block">
+    <div class="image" style="background-image:url('{{ block.image }}')"></div>
+    <div class="content">
+      {{ block.text | markdownify }}
+    </div>
+  </div>
+  {% endfor %}
 </div>

@@ -19,6 +19,10 @@ body {
   align-items: center;
   display: flex;
 
+  @media (min-width: 1000px) {
+    height: 100px;
+  }
+
   &__logo {
     padding: 0 20px;
     font-size: 1.6em;
@@ -66,7 +70,7 @@ body {
       border-radius:3px;
       color:#111;
       display: block;
-      
+
       @media (min-width:1000px) {
         margin-left:10px;
 
@@ -118,8 +122,8 @@ body {
   margin:auto;
   padding: 20px;
   @media (min-width: 1000px) {
-    padding: 20px 50px;
-    min-height:calc(100vh - 150px);
+    padding: 20px 50px 50px;
+    min-height:calc(100vh - 170px);
     display:flex;
   }
   &__intro {
@@ -131,6 +135,10 @@ body {
       border-bottom:2px dotted #f26161;
     }
     @media (min-width: 1000px) {
+      .block {
+        position: sticky;
+        top:150px;
+      }
       h1 {
         font-size:2.1em;
       }
@@ -170,6 +178,51 @@ body {
       &__image {
         height:auto;
       }
+    }
+  }
+}
+
+.banner {
+  padding: 50px;
+  background: #fff;
+  display: flex;
+
+  &__block {
+    flex:1;
+    padding: 0 15px;
+    text-align: center;
+
+    i.fas {
+      font-size: 3.2em;
+      color:#f26161;
+    }
+  }
+}
+
+.photo-text-blocks {
+  font-size:1.3em;
+  line-height: 1.4;
+  &__block {
+    margin:100px auto;
+    max-width:1200px;
+    align-items: center;
+    display:flex;
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .content {
+        margin-left:0;
+        margin-right:80px;
+      }
+    }
+    .content {
+      width:360px;
+      margin-left:80px;
+    }
+    .image {
+      height:420px;
+      background:url() 50% 50% / cover no-repeat;
+      box-shadow: 10px 10px 0 rgba(242,97,97,.2);
+      flex-grow:1;
     }
   }
 }
