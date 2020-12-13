@@ -42,17 +42,15 @@
     <span class="spacer"></span>
     <a href="/">Alora Yurts {{ site.time | date:'%Y' }}</a>
   </footer>
-
   <script>
-    const menuicon = document.querySelector('#menuicon');
-    menuicon.addEventListener('click', function(e) {
-      menuicon.classList.toggle('show-dropdown');
-    });
+    const menu = document.querySelector('#menuicon');
+    menu.onclick = () => {
+      menu.classList.toggle('show-dropdown');
+    };
   </script>
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    ga('create', 'UA-75118819-1', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
