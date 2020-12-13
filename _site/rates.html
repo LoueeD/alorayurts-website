@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }}</title>
+  <title>Alora Yurts Rates</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="Alora Yurts Rates">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
@@ -16,11 +16,9 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/normalize.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
-  {% for filename in page.styles %}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{filename}}.css">
-  {% endfor %}
+  <link rel="stylesheet" href="/alorayurts-website/assets/css/normalize.css">
+  <link rel="stylesheet" href="/alorayurts-website/assets/css/styles.css">
+  
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&&family=Marck+Script&display=swap" rel="stylesheet">
 
@@ -30,9 +28,27 @@
 </head>
 
 <body>
-  {% include nav.html %}
+  <div class="nav">
+  <a href="/alorayurts-website/" class="nav__logo">
+    Alora Yurts
+  </a>
+  <div id="menuicon" class="nav__menuitem">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <div class="nav__items">
+    <a href="/alorayurts-website/">Home</a>
+    <a href="/alorayurts-website/about">About</a>
+    <a href="/alorayurts-website/food">Food</a>
+    <a href="/alorayurts-website/rates">Rates</a>
+    <a href="/alorayurts-website/gallery">Gallery</a>
+    <a href="/alorayurts-website/where">Where</a>
+    <a href="mailto:sara@alorayurts.com">sara@alorayurts.com</a>
+  </div>
+</div>
   <!-- Add your site or application content here -->
-  {{ content }}
+  
 
   <footer>
     <a href="tel:sara@alorayurts.com">sara@alorayurts.com</a> 
