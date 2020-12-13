@@ -17,9 +17,10 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="{{site.baseurl}}/assets/css/normalize.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css">
+  {% assign cacheBust = site.time | date:'?v=%s' %}
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/styles.css{{cacheBust}}">
   {% for filename in page.styles %}
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{filename}}.css">
+  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/{{filename}}.css{{cacheBust}}">
   {% endfor %}
   <link rel="preconnect" href="https://fonts.gstatic.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&&family=Marck+Script&display=swap" rel="stylesheet">
