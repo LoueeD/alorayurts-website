@@ -4,6 +4,8 @@ title: About Alora Yurts
 permalink: /about/
 ---
 
+![Pool at Alora Yurts](http://alorayurts.com/assets/img/almunecar-2018/0014.jpg)
+
 At the amazing new site which is accessed up a winding road into the hills north of Almunecar, we have three yurts and three separate accommodation dwellings. All are individually furnished with an eclectic mix of delights from around the globe which are a visual work of art in themselves and a feast for the senses. 
 
 The hand painted Mongolian yurts are beautiful spaces with comfy beds, lush bedding, quirky furniture all lit by candlelight and with a wood burner for those cooler winter evenings. Each of the yurts, are positioned down tracks to take advantage of the views , they each have their own compost loo, seating areas and outdoor bed for stargazing the sky is amazing as no light pollution. 

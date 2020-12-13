@@ -1,0 +1,34 @@
+---
+layout: default
+title: Gallery - Alora Yurts
+leftImages: 
+  - http://alorayurts.com/assets/img/almunecar-2018/0014.jpg
+  - http://alorayurts.com/images/gallery/June2018/hideaway-7.jpg
+  - http://alorayurts.com/images/gallery/June2018/hideaway-8.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-15.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-14.jpg
+  - http://alorayurts.com/images/gallery/June2018/hideaway-4.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-12.jpg
+rightImages: 
+  - http://alorayurts.com/images/gallery/June2018/hideaway-6.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-19.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-18.jpg
+  - http://alorayurts.com/images/gallery/June2018/hideaway-5.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-17.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-16.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-13.jpg
+  - http://alorayurts.com/images/gallery/June2017/fb-june-11.jpg
+---
+
+<div class="gallery">
+  <div class="gallery__column">
+    {% for img in page.leftImages %}
+    <img src="{{img}}" alt="">
+    {% endfor %}
+  </div>
+  <div class="gallery__column">
+    {% for img in page.rightImages %}
+    <img src="{{img}}" alt="">
+    {% endfor %}
+  </div>
+</div>
