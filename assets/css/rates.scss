@@ -1,0 +1,57 @@
+---
+---
+
+.rates {
+  min-height: calc(100vh - 225px);
+  &__header {
+    font-size: 1.6em;
+    padding: 200px 80px 20px;
+    color: #fff;
+    background:url(http://alorayurts.com/assets/img/almunecar-2018/0014.jpg) 50% 50% / cover no-repeat;
+    background-image:linear-gradient(transparent 60%, rgba(34, 34, 34, 0.61)), url(http://alorayurts.com/assets/img/almunecar-2018/0014.jpg);
+  }
+  &__grid {
+    margin: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap:50px;
+    gap:50px;
+    display: grid;
+    .block {
+      padding: 40px 20px;
+      text-align: center;
+      background: #ffffff;
+      .dates {
+        margin:0 0 20px;
+        padding:0 10px 15px;
+        font-size: 1.4em;
+        border-bottom:2px dashed rgba(34, 34, 34, 0.3);
+        display: inline-block;
+      }
+      .price {
+        font-size: 3.4em;
+        font-weight: 700;
+        color:#f26161;
+        span {
+          padding-left: 10px;
+          font-size: 0.5em;
+          font-weight: 400;
+          opacity: 0.5;
+        }
+      }
+      .week {
+        opacity: 0.6;
+        padding: 10px 0 0;
+      }
+    }
+  }
+  &__columns {
+    padding:50px;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    gap:50px;
+    display: grid;
+    font-size:1.2em;
+    line-height: 1.4;
+  }
+}

@@ -293,9 +293,10 @@ h1,h2,h3 {
 }
 
 .gallery {
+  --gap: 60px;
   display: flex;
   &__column {
-    margin: 40px 40px 0;
+    margin: var(--gap) var(--gap) 0;
     flex-direction: column;
     justify-content: space-between;
     display: flex;
@@ -304,7 +305,7 @@ h1,h2,h3 {
       margin-left: 0;
     }
     img {
-      margin-bottom: 40px;
+      margin-bottom: var(--gap);
       width: 100%;
       display: block;
     }
@@ -315,18 +316,27 @@ footer {
   padding:30px 30px;
   background: #fff5f4;
   border-top:1px dotted rgba(0,0,0,.2);
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  
+
+  @media (min-width: 950px) {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
 
   .spacer {
     flex-grow: 1;
   }
   
   a {
-    padding:20px;
+    padding:10px;
+    display: block;
     text-decoration: none;
     color: #55241f;
+
+    @media (min-width: 950px) {
+      padding:20px;
+    }
 
     &:hover {
       text-decoration: underline;
