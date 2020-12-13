@@ -159,6 +159,13 @@ h1,h2,h3 {
       .block {
         position: sticky;
         top:150px;
+        animation: 550ms slideIn ease-in-out;
+        @keyframes slideIn {
+          0%{
+            opacity: 0;
+            transform: translate3d(0,20px,0);
+          }
+        }
       }
       h1 {
         font-size:2.1em;
@@ -198,6 +205,27 @@ h1,h2,h3 {
       grid: 50px;
       &__image {
         height:auto;
+        opacity: 0;
+        transform: translate3d(0,20px,0);
+        animation: 350ms slideImage ease-in-out forwards;
+        @keyframes slideImage {
+          100%{
+            opacity: 1;
+            transform: translate3d(0,0,0);
+          }
+        }
+        &[data-index="1"] {
+          animation-delay: 150ms;
+        }
+        &[data-index="2"] {
+          animation-delay: 300ms;
+        }
+        &[data-index="3"] {
+          animation-delay: 450ms;
+        }
+        &[data-index="4"] {
+          animation-delay: 600ms;
+        }
       }
     }
   }

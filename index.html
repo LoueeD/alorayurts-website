@@ -40,7 +40,7 @@ photoTextBlocks:
   </div>
   <div class="images">
     {% for img in page.images %}
-    <div class="images__image" style="background-image:url('{{ img }}')"></div>
+    <div data-index="{{forloop.index}}" class="images__image" style="background-image:url('{{ img }}')"></div>
     {% endfor %}
   </div>
 </div>
