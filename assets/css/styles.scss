@@ -39,6 +39,7 @@ h1,h2,h3 {
     flex-grow: 1;
     @media (min-width: 1000px) {
       padding: 0 40px;
+      font-size: 2em;
     }
   }
 
@@ -265,7 +266,7 @@ h1,h2,h3 {
   font-size:1.3em;
   line-height: 1.4;
   &__block {
-    margin:100px auto;
+    margin:150px auto;
     max-width:1200px;
     align-items: center;
     display:flex;
@@ -281,7 +282,7 @@ h1,h2,h3 {
       margin-left:80px;
     }
     .image {
-      height:420px;
+      height:500px;
       background:url() 50% 50% / cover no-repeat;
       box-shadow: 10px 10px 0 rgba(242,97,97,.2);
       flex-grow:1;
